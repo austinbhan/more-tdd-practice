@@ -1,6 +1,6 @@
 export const oils = [
     {  
-        img: './assets/olive.jepg', 
+        img: './assets/olive.jpeg', 
         ingredient: 'Olive', 
         smokePoint: 'low', 
         price: 'low' 

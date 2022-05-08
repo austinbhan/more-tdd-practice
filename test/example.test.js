@@ -1,5 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
+import { renderOils } from './utils.js';
+import { oils } from './oils.js'; 
 
 const test = QUnit.test;
 
