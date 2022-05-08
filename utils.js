@@ -1,5 +1,5 @@
-export function renderOils(oil) {
-    const oilClass = document.getElementsByClassName('oils');
+export function renderOil(oil) {
+    const oilClass = document.createElement('oil');
 
     let img = document.createElement('img');
     img.src = oil.price;
@@ -13,5 +13,5 @@ export function renderOils(oil) {
     let p = document.createElement('p');
     p.textContent = '';
 
-    oilClass.append();
+    oilClass.append(img, h2, h5, p);
 }

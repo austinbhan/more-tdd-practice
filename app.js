@@ -1,9 +1,16 @@
 // import functions and grab DOM elements
 
-import { renderOils } from './utils.js';
+import { renderOil } from './utils.js';
 import { oils } from './oils.js';
 
 // let state
+
+const oilList = document.getElementsByClassName('oils');
+
+for (let oil of oils) {
+    const oilDiv = renderOil(oil);
+    oilList.append(oilDiv);
+}
 
 // set event listeners 
   // get user input
