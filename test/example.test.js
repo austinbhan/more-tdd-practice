@@ -18,3 +18,13 @@ test('test render oil function', (expect) => {
     // Make assertions about what is expected versus the actual result
     expect.equal(actual.outHTML, expected);
 });
+
+test('Trial Test, 1+1', (expect) => { // Created Test, but not functionign
+
+    const expected = true;
+
+    const actual = true;
+
+
+    expect.equal(actual, expected);
+});
