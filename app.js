@@ -5,11 +5,11 @@ import { oils } from './oils.js';
 
 // let state
 
-const oilList = document.getElementsByClassName('oils');
+const oilListElem = document.getElementById('oils');
 
 for (let oil of oils) {
     const oilDiv = renderOil(oil);
-    oilList.append(oilDiv);
+    oilListElem.append(oilDiv);
 }
 
 // set event listeners 
