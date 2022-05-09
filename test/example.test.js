@@ -8,7 +8,7 @@ const test = QUnit.test;
 test('test render oil function', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = `<div id="olive"><img src = ".assets/olive.jpeg"><h2>Say Hello to Olive Oil</h2><h5>Its smoke point is low</h5><p>It's cheap</p></div>`;
+    const expected = `<div id="oils"><img src = ".assets/olive.jpeg"><h2>Say Hello to Olive oil!</h2><h5>Its smoke point is low</h5><p>It's cheap</p>`;
     
     //Act 
     // Call the function you're testing and set the result to a const
@@ -19,12 +19,3 @@ test('test render oil function', (expect) => {
     expect.equal(actual.outHTML, expected);
 });
 
-test('Trial Test, 1+1', (expect) => { // Created Test, but not functionign
-
-    const expected = true;
-
-    const actual = true;
-
-
-    expect.equal(actual, expected);
-});
