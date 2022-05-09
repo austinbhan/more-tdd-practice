@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { renderOil } from '../utils.js';
-import { oils } from '../oils'; 
+import { renderOil } from './utils.js';
+import { oils } from './oils.js'; 
 
 const test = QUnit.test;
 
@@ -12,9 +12,9 @@ test('test render oil function', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = 
+    const actual = renderOil(oils[0]); 
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    expect.equal(actual.outHTML, expected);
 });
