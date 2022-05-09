@@ -1,3 +1,4 @@
+
 export function renderOil(oil) {
     const div = document.createElement('div');
     div.classList.add(oil);
@@ -9,10 +10,10 @@ export function renderOil(oil) {
     h2.textContent = `Say Hello to ${oil.ingredient} oil!`;
 
     let h5 = document.createElement('h5');
-    h5.textContent = 'Text';
+    h5.textContent = `Its smoke point is ${oil.smokePoint}`;
 
     let p = document.createElement('p');
-    p.textContent = `It's `;
+    p.textContent = `It's ${oil.price}`;
 
     div.append(img, h2, h5, p);
     return div;
